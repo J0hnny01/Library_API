@@ -16,8 +16,8 @@ public class Book {
     private String title;
     @Column(name = "release_date", nullable = false)
     private LocalDate releaseDate;
-    @Column(name = "status", nullable = false)
-    private boolean status;
+    @Column(name = "isAvailable", nullable = false)
+    private boolean isAvailable;
     @ManyToMany
     @JoinTable(
         name = "book_authors",
